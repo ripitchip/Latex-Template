@@ -1,0 +1,60 @@
+\documentclass[14pt]{formation}
+
+\usepackage{lipsum} 
+\usepackage{eso-pic}
+\usepackage[percent]{overpic}
+\usepackage{hyperref}
+%intégration de certaines fonts (utile sur overleaf)
+\usepackage{fontspec}
+%permet l affichage des titres
+\usepackage{tikz}
+\usetikzlibrary{calc} 
+%permet l affichage fancy
+\usepackage{fancyhdr}
+%pour définir des couleurs personnalisées
+\usepackage{xcolor}
+\usepackage{titlesec} %import paragraph and subparagraph
+\usepackage[skip=10pt plus1pt, indent=40pt]{parskip}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+\usepackage{bookmark}
+\usepackage{titletoc}
+
+
+\title{Formation} %Titre du fichier
+\customsection
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Paramètres %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \titre{Sécurité, Rangement, Gaspillage (SRG) } %Titre du fichier .pdf
+    \formateur{Thomas \textsc{Derudder}} %Nom de l'enseignant
+    \logo{img/footer.png} %Chemin vers le logo de l'UCL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Dans un compilateur xelatex, faire page de garde va afficher une erreur car la police open source ne propose pas la tipo conseillé par le document, mais cela fonctionne quand même, j'ai laissé l'erreur au cas où ce problème est patché avec le temps
+    \fairepagedegardeVun  %création page de garde
+    \fairemarges   %création du logo et des marges
+    \tableofcontents %création de la table des matières
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Définit une commande personnalisée pour afficher l'image correspondante
+
+    \mysection{Introduction}
+    \subsection{Introduction}
+    La première règle universelle avant d’utiliser n’importe quelle machine ou technique, est qu’il faut vous mettre dans des conditions de concentrations adéquats. Ensuite, il faut s’équiper avec les EPI nécessaires, qui se trouvent dans le tiroir à protection, situé en dessous de l’établi de rangement des outils classiques.	
+	Chaque EPI est à utiliser selon le danger à éviter. Nous pouvons ainsi regrouper les sources de danger en cinq catégories : 
+	-Le risque de coupure : Il est impératif de mettre à grand minima des gants anti-coupures lors de l’utilisation de ces outils, et il est très vivement recommandé de mettre des lunettes de protections. La confiance en ses capacités n’est pas suffisante pour se protéger, car un moment de distraction est très vite arrivé, notamment au FabLab qui est un lieu vivant et parfois mouvementé.
+
+	-Le risque de projections : On peut inclure dans cette catégorie, les dremels, les perceuses (manuelles et à colonne), qui peuvent émettre des copeaux dangereux lors de leur utilisation. Attention : Il parait évident que le bois et le métal peuvent blesser mais ne sous-estimez pas la dangerosité du PLA et des plastiques, qui chauffent et peuvent tout autant blesser les zones sensibles comme les yeux. Pour ces outils les gants et les lunettes de protections sont de rigueurs. 
+	
+    -L’émission de particules fines : Que ce soit pour la peinture, le vernissage à la bombe ou le ponçage de matière toxique (ex : résine époxy). Il est impératif de se mettre dans un endroit aéré et de porter un masque anti particules fines.
+	
+    -Les outils très bruyants : D’une manière générale, nous allons vous demander d’utiliser ce genre d’outils au -1 plutôt qu’au FabLab. En effet, le FabLab est un espace de collaboration et de vie et contient donc des gens ne souhaitant pas perdre des points d’audition. De plus, le FabLab est mitoyen au Learning Center, espace de travail pour les étudiants du pôle. Si vous pensez qu’il y a suffisamment peu de personnes proches de votre espace de travail pour ne pas déranger qui que ce soit, portez un casque de protection auditive.
+	
+    -Les outils à rotation rapides : Ici, la mesure de sécurité principale n’est pas liée aux EPI, mais est tout aussi importante. Il s’agit de s’attacher les cheveux si ceux-ci sont longs. En effet, un moteur de perceuse (à colonne et manuelle) ou même de ponceuse électrique est plus puissant que votre résistance capillaire. Il faut aussi faire attention, lors du changement d’embout sur les perceuses manuelles à vos mains, ou à vos gants. Ils peuvent se coincer et se faire emporter dans la rotation.
+
+    \mysection{test}
+    \mysection{section3}
+    \mysection{section3}
+
+\end{document}
